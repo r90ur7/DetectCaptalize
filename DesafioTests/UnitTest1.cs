@@ -1,5 +1,6 @@
 ﻿using Xunit;
 using DesafioApp;
+using System;
 
 namespace DesafioTests
 {
@@ -9,12 +10,22 @@ namespace DesafioTests
         public void TestDetectCapitalUse()
         {
             var solution = new Solution();
-            Assert.True(solution.DetectCapitalUse("USA"));
-            Assert.True(solution.DetectCapitalUse("leetcode"));
-            Assert.True(solution.DetectCapitalUse("Google"));
-            Assert.False(solution.DetectCapitalUse("FlaG"));
-            Assert.False(solution.DetectCapitalUse(""));
-            Assert.False(solution.DetectCapitalUse("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"));
+
+            RunTest(solution, "USA", true);
+            RunTest(solution, "leetcode", true);
+            RunTest(solution, "Google", true);
+            RunTest(solution, "FlaG", false);
+            RunTest(solution, "", false);
+            RunTest(solution, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", false);
+        }
+
+        private void RunTest(Solution solution, string input, bool expected)
+        {
+            bool result = solution.DetectCapitalUse(input);
+            Console.WriteLine($"Testando: {input}");
+            Console.WriteLine($"Esperado: {expected}, Recebido: {result}");
+            Console.WriteLine($"Resultado: {(result == expected ? "Passou" : "Falhou")}");
+            Console.WriteLine();
         }
     }
 }
