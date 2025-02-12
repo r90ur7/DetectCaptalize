@@ -32,14 +32,13 @@ Se uma dessas condições for atendida, a função retorna `true`; caso contrár
 
 ### Visual Studio code
 
-1. Abra o Visual Studio e carregue a solução do seu projeto.
+1. Abra o Visual Studio code e carregue a solução do seu projeto.
 2. No cli do projeto digite "dotnet test"
-
 3. Os resultados serão obtidos na saida de seu comando
 
 ### Visual Studio
 
-1. Abra o Visual Studio Code e carregue a pasta do seu projeto.
+1. Abra o Visual Studio e carregue a pasta do seu projeto.
 
 3. clique com o botão direito na Program.cs da Pasta DesafioAPP e clique em "executar testes"
 
