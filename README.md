@@ -30,14 +30,14 @@ Se uma dessas condições for atendida, a função retorna `true`; caso contrár
 
 ## Executando Testes
 
-### Visual Studio
+### Visual Studio code
 
 1. Abra o Visual Studio e carregue a solução do seu projeto.
 2. No cli do projeto digite "dotnet test"
 
 3. Os resultados serão obtidos na saida de seu comando
 
-### Visual Studio Code
+### Visual Studio
 
 1. Abra o Visual Studio Code e carregue a pasta do seu projeto.
 
