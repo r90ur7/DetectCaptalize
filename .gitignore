@@ -1,0 +1,33 @@
+# Arquivos de build
+bin/
+obj/
+
+# Arquivos do Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de backup
+*.bak
+*.old
+
+# Arquivos de configuração do sistema
+.vscode/
+.idea/
+
+# Arquivos de pacotes
+packages/
+*.nupkg
+*.snupkg
+
+# Arquivos de publicação
+publish/
